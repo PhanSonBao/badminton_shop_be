@@ -5,7 +5,7 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const { authMiddleware } = require('../middleware/auth.middleware');
 const { err400, err500, ok } = require('../utils/handleResponse');
-// Đăng ký tài khoản
+// Đăng ký tà
 router.post('/register', async (req, res) => {
    try {
       const { email, password, fullName, phoneNumber } = req.body;
